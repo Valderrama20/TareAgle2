@@ -1,7 +1,14 @@
+import { certifique } from "./__prueba.js";
 
-document.addEventListener("DOMContentLoaded", function () {
+
   const form = document.getElementById("wrapped");
+   
+  
+
   form.addEventListener("submit", function (event) {
+     
+    
+    
     event.preventDefault();
 
     // Array de nombres de los campos y sus respectivos valores
@@ -27,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mostrar los datos en la consola
     console.log("Datos del formulario:", formData);
 
-    // Aquí puedes enviar los datos a tu API si es necesario
+    // Aquí puedes enviar los datos a tu API 
     // fetch("URL_DE_TU_API", {
     //     method: "POST",
     //     body: JSON.stringify(formData),
@@ -43,6 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //     console.error("Error al enviar los datos:", error);
     // });
   });
-});
+;
   
 
