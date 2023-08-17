@@ -5,10 +5,7 @@ import { certificate } from "./__prueba.js";
    
 
   form.addEventListener("submit", function (event) {
-     
-  certificate()
-     
-    
+       
     event.preventDefault();
 
     // Array de nombres de los campos y sus respectivos valores
