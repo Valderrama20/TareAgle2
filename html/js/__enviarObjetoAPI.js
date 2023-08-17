@@ -32,20 +32,20 @@ import { certificate } from "./__prueba.js";
     console.log("Datos del formulario:", formData);
 
     // Aquí puedes enviar los datos a tu API 
-    // fetch("URL_DE_TU_API", {
-    //     method: "POST",
-    //     body: JSON.stringify(formData),
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     }
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     console.log("Respuesta de la API:", data);
-    // })
-    // .catch(error => {
-    //     console.error("Error al enviar los datos:", error);
-    // });
+    fetch("https://tareagle-production.up.railway.app/carbon-footprint-form/people", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Respuesta de la API:", data);
+    })
+    .catch(error => {
+        console.error("Error al enviar los datos:", error);
+    });
   });
 ;
   
