@@ -1,13 +1,13 @@
-import { certifique } from "./__prueba.js";
+import { certificate } from "./__prueba.js";
 
 
   const form = document.getElementById("wrapped");
    
-  
 
   form.addEventListener("submit", function (event) {
      
-    
+  certificate()
+     
     
     event.preventDefault();
 
